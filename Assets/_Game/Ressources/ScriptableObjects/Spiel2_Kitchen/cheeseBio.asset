@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e0129e6b07cda4685e8bcf739003e0, type: 3}
+  m_Name: cheeseBio
+  m_EditorClassIdentifier: 
+  ingredientType: cheeseBio
+  prefab:
+  - {fileID: 2051523144584749149, guid: a18f29c6a8151104486a21aceb1c43a3, type: 3}
+  points: 2
