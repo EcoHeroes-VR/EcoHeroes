@@ -69,8 +69,8 @@ namespace _Game.Scripts.Modules.SceneLoadManager
         {
             _isLoading = true;
 
-            //var displaySubsystem = XRGeneralSettings.Instance.Manager.activeLoader.GetLoadedSubsystem<XRDisplaySubsystem>();
-            //if (displaySubsystem != null) displaySubsystem.Stop();
+            var displaySubsystem = XRGeneralSettings.Instance.Manager.activeLoader.GetLoadedSubsystem<XRDisplaySubsystem>();
+            if (displaySubsystem != null) displaySubsystem.Stop();
 
             var unloadScene = SceneManager.GetActiveScene();
             onLoadBegin?.Invoke();
@@ -85,7 +85,7 @@ namespace _Game.Scripts.Modules.SceneLoadManager
             if (ScreenFader != null) yield return ScreenFader.StartFadeOut();
             Debug.Log("Scene Loaded: " + sceneName);
 
-            //if (displaySubsystem != null) displaySubsystem.Start();
+            if (displaySubsystem != null) displaySubsystem.Start();
             onLoadEnd?.Invoke();
             
             _isLoading = false;
