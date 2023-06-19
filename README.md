@@ -15,34 +15,41 @@ Im Zuge dieses Projekts entstehen in Zusammenarbeit mit dem Nachhaltigkeitsbüro
 ## Ziel des Spiels
 Der Spieler ist dafür verantwortlich Augsburg nachhaltiger zu gestalten. In der Rolle des Stadtoberhauptes legt er dabei selbst Hand an und lernt wichtige Prinzipien nachhaltigen Handelns. Am Ende jedes Minispiels werden Nachhaltigkeitspunkte vergeben, sodass der Spieler ein direktes Feedback über seine getroffenen Entscheidungen erhält und sich mit anderen Spielern vergleichen kann.
 
-## Weiteres
+## Referenzen
 
 * [Projekt Website](https://showcase.informatik.hs-augsburg.de/sose-2023/eco-heroes)
 * [Projekt Trailer](https://youtu.be/19jOlFxftfI)
 
-## Open source licensing info
-- [LICENSE FILE](LICENSE)
+## Open-Source Lizenz
+- [LIZENZ DATEI](LICENSE)
+- Wir freuen uns über die Nennung der Originalautoren beim Kopieren, Verwenden oder Umschreiben des Quellcodes.
+
+## Feedback
+- Kommentare, Fragen und allgemeines Feedback können gerne an folgende E-Mail-Adresse gesendet werden: anja.metzner@hs-augsburg.de
 
 ## Mitwirkende
 
-Bei dem Projekt handelte es sich initial um ein studiengangsübergreifendes Semesterprojekt an der Technischen Hochschule Augsburg.
+- Bei dem Projekt handelte es sich initial um ein studiengangsübergreifendes Semesterprojekt an der Technischen Hochschule Augsburg.
 
-Mitwirkende Studenten:
+### **Mitwirkende im Sommersemester 2023:**
 
-**Johanna Dannenberg** <br> 
-**Marc Fischer** <br>
-**Nikita Guryanov** <br>
-**Manuel Hagen** <br> 
-**Lukas Konietzka** <br>
-**Theresa Mayer** <br> 
-**Martin Sattler** <br> 
-**Dominik Wagner**
+- **Studenten/Studentinnen:** Johanna Dannenberg, Marc Fischer, Nikita Guryanov, Manuel Hagen, Lukas Konietzka, Theresa Mayer, Martin Sattler, Dominik Wagner
+
+- **Beteiligte:** Büro f. Nachhaltigkeit, Schülerlabor<br>
+
+- **Supervision:** Prof. Dr. Anja Metzner (Technische Hochschule Augsburg)<br>
+
+Vielen Dank an alle Beteiligten! Darunter das Projekt ii.oo, das Büro für Nachhaltigkeit der Stadt Augsburg sowie das DLR_School_Lab Uni Augsburg
+
+<br>
 
 # Technisches
 
 ## Anforderungen
 * Unity 2021.3.21f1
 * VR Headset (z.B. Occulus Rift/HTC Vive Pro)
+* Die empfohlene Systemanforderungen der Workstation sind mit derer des genutzten VR-Headsets abzugleichen
+* Für Weiterentwicklung: Unity C# Code Editor (Bsp.: Jetbrains Rider oder Microsoft Visual Studio)
 
 ## Installation
 
@@ -50,12 +57,23 @@ Um das Spiel zu spielen:
 
 ```
 1. Projektdaten herunterladen
-2. Projektdaten in Unity öffenen
+2. Projektdaten in Unity öffenen (Editor Version s.o.)
 3. Spielversion bauen
 4. gebaute Version ausführen
+5. falls noch nicht getan: entsprechende Software des VR-Headsets installieren
+```
+
+Zur Weiterentwicklung:
+```
+1. Projektdaten herunterladen
+2. Projektdaten in Unity öffenen (Editor Version s.o.)
+3. Weiterentwicklung:
+    - Bearbeiten der Scenes & Assets in Unity
+    - Bearbeiten der C# Scripts in einem ausgwählten Code Editor
+4. falls noch nicht getan: entsprechende Software des Entwicklungs-VR-Headsets installieren
 ```
 
 ## Softwarestruktur
 <h1 align="center">
-    <img src="images/Komponentendiagramm.png" alt="Logo" height="350"> </br>
+    <img src="images/Komponentendiagramm.png" alt="SW-Komponenten" height="350"> </br>
 </h1>
