@@ -35,7 +35,7 @@ Der Spieler ist dafür verantwortlich Augsburg nachhaltiger zu gestalten. In der
 
 - **Studenten/Studentinnen:** Johanna Dannenberg, Marc Fischer, Nikita Guryanov, Manuel Hagen, Lukas Konietzka, Theresa Mayer, Martin Sattler, Dominik Wagner
 
-- **Beteiligte:** Büro f. Nachhaltigkeit, Schülerlabor<br>
+- **Beteiligte:** Büro f. Nachhaltigkeit, Schülerlabor der Universität Augsburg<br>
 
 - **Supervision:** Prof. Dr. Anja Metzner (Technische Hochschule Augsburg)<br>
 
