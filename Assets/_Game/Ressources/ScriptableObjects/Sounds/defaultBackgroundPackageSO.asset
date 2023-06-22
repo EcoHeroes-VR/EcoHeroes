@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93d8c6585544e4e90040d108f51493d, type: 3}
+  m_Name: defaultBackgroundPackageSO
+  m_EditorClassIdentifier: 
+  <SoundList>k__BackingField:
+  - <Name>k__BackingField: city1
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: 34be84138cca37c49ae9a89fbff7e28a, type: 3}
+    <Volume>k__BackingField: 0.5
+    <Pitch>k__BackingField: 1
+  - <Name>k__BackingField: nature
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: c9c9ae6e09d517e46954d9c85fcac5fa, type: 3}
+    <Volume>k__BackingField: 1
+    <Pitch>k__BackingField: 1
+  - <Name>k__BackingField: chill_lofi_background
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: 91ae9fe55eed14f4cbd3b88956cac108, type: 3}
+    <Volume>k__BackingField: 0.25
+    <Pitch>k__BackingField: 1
+  - <Name>k__BackingField: lofi-loop-2023
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: 25c7b6c35b473704887ba92ab58069e8, type: 3}
+    <Volume>k__BackingField: 0.25
+    <Pitch>k__BackingField: 1

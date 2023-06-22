@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93d8c6585544e4e90040d108f51493d, type: 3}
+  m_Name: defaultsfxPackageSO
+  m_EditorClassIdentifier: 
+  <SoundList>k__BackingField:
+  - <Name>k__BackingField: teleport
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: c2b70b80813c1824bb4ea861876b9e14, type: 3}
+    <Volume>k__BackingField: 1
+    <Pitch>k__BackingField: 1
+  - <Name>k__BackingField: radio
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: a1eb18b0e3f81dd4185a9b5753690392, type: 3}
+    <Volume>k__BackingField: 1
+    <Pitch>k__BackingField: 1
+  - <Name>k__BackingField: frog
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: 2aa4f2a31bcf2744b97bc85aa446f440, type: 3}
+    <Volume>k__BackingField: 1
+    <Pitch>k__BackingField: 1
+  - <Name>k__BackingField: knife
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: a034dec07d0b66c41a58feb66089636f, type: 3}
+    <Volume>k__BackingField: 1
+    <Pitch>k__BackingField: 1
+  - <Name>k__BackingField: task-successful
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: 1a52bffb20b5852468f6bd807fe37c61, type: 3}
+    <Volume>k__BackingField: 1
+    <Pitch>k__BackingField: 1
+  - <Name>k__BackingField: scream
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: c5fad133a94fb874daedd662932aaf31, type: 3}
+    <Volume>k__BackingField: 1
+    <Pitch>k__BackingField: 1
