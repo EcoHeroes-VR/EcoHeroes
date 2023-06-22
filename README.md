@@ -53,6 +53,8 @@ Vielen Dank an alle Beteiligten! Darunter das Projekt ii.oo, das Büro für Nach
 
 ## Installation
 
+[Schritt-für-Schritt Anleitung](Eco_Heroes_Installationsanleitung.pdf)
+
 Um das Spiel zu spielen:
 
 ```
@@ -72,6 +74,25 @@ Zur Weiterentwicklung:
     - Bearbeiten der C# Scripts in einem ausgwählten Code Editor
 4. falls noch nicht getan: entsprechende Software des Entwicklungs-VR-Headsets installieren
 ```
+
+## Überblick der wichtigsten Dateien für Entwickler
+
+Dateien befinden sich in: `Assets > _Game`
+
+### Scenes
+Hier befinden sich die Szenen der einzelnen Level (`Spiel1`, `Hubworld`, `Kitchen`)
+
+### Scripts
+Hier sind alle C#-Scripts sortiert nach Szene oder Anwendung
+
+### Resources
+Hier befinden sich die Ressourcen, wie Models, Materials, Sounds etc. Innerhalb der einzelnen Subordner wird nach Anwendung sortiert (beispielsweise: `Models > Spiel2`)
+
+### RenderSettings
+Hier werden die Licht- und RenderPipeline-Einstellungen gespeichert, die für das gesamte Spiel verwendet werden.
+
+### Prefabs
+Hier sind die Prefab-Objekte, die für das Spiel erstellt wurden, sortiert nach Anwendung.
 
 ## Softwarestruktur
 <h1 align="center">
