@@ -5,6 +5,7 @@ using _Game.Scripts.Modules.DialogManager;
 using TMPro;
 using _Game.Scripts.Modules.SoundManager;
 using _Game.Scripts.Modules.Player;
+using _Game.Scripts.Modules.SceneLoadManager;
 
 namespace _Game.Scripts.Spiel2Kitchen
 {
@@ -22,9 +23,9 @@ namespace _Game.Scripts.Spiel2Kitchen
         [SerializeField] private InventoryVR _inventoryUI;
 
         [SerializeField]
-        private TextMeshProUGUI scoreText;
+        private TextMeshPro scoreText;
         [SerializeField]
-        private TextMeshProUGUI time;
+        private TextMeshPro time;
 
         [SerializeField] private DialogManager _dialogManager;
 
@@ -37,11 +38,14 @@ namespace _Game.Scripts.Spiel2Kitchen
         private void Start()
         {
             _inventoryUI.inventory = Player.GetInstance.Inventory;
-            _dialogManager.NextDialog("KitchenEinleitung");
 
             _stopwatch = new Stopwatch();
             _score = gameObject.AddComponent<HighScoreKitchen>();
             _timerWasStarted = false;
+
+            SceneLoader.GetInstance.onLoadEnd.AddListener(() => {
+                _dialogManager.NextDialog("KitchenEinleitung");
+            });
         }
 
         /// <summary>

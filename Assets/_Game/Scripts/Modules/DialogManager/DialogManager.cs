@@ -64,22 +64,16 @@ namespace _Game.Scripts.Modules.DialogManager
         /// </summary>
         public void NextDialog(string dialogName = "")
         {
-            Debug.Log("nextDialog");
             // Start the given dialog
             if (!string.IsNullOrEmpty(dialogName)) {
                 PlayDialog(dialogName);
-                
-                Debug.Log("NextDialog - dialogName");
             }
             // Start the next dialog
             else if (!string.IsNullOrEmpty(_nextDialog)) {
                 PlayDialog(_nextDialog);
-                
-                Debug.Log("NextDialog - _nextDialog");
             }
             // End of dialog
             else {
-                Debug.Log("NextDialog - endDialog");
                 _dialogUi.ToggleUI(false);
                 SoundManager.SoundManager.GetInstance.StopDialogSequenz();
             }
@@ -87,22 +81,22 @@ namespace _Game.Scripts.Modules.DialogManager
 
         private void PlayDialog(string dialogName)
         {
-        //Debug.Log("Play Dialog");
             var package = DialogPackage.GetElementFromName(dialogName);
-            if (package is not null) {
-                _currentDialog = package.Name;
-                _nextDialog = package.NextDialogName;
-            
-                if (package.DialogSound.AudioClip != null)
-                    SoundManager.SoundManager.GetInstance.StartDialogSequenz(package.DialogSound);
 
-                if (package.DialogSound.AudioClip != null || _subtitle) {
-                    _dialogUi.SetDialog(this, package);
-                    _dialogUi.ToggleUI(true);
-                }
-                else
-                    _dialogUi.ToggleUI(false);
+            if (package == null) {
+                Debug.LogError("package is null!");
+                return;
             }
+            
+            _currentDialog = package.Name;
+            _nextDialog = package.NextDialogName;
+        
+            // play the audio when not null
+            if (package.DialogSound.AudioClip != null)
+                SoundManager.SoundManager.GetInstance.StartDialogSequenz(package.DialogSound);
+
+            _dialogUi.SetDialog(this, package); 
+            _dialogUi.ToggleUI(true);
         }
     }
 }

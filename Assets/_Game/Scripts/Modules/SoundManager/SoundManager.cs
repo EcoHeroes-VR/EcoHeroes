@@ -264,13 +264,21 @@ namespace _Game.Scripts.Modules.SoundManager
                 Debug.LogException(new NullReferenceException("SfxSourceParentObject is null or empty"), SfxSourceParentObject);
                 return;
             }
-            
+
             // TODO: Objectpooling, to recycle the audiosources
+            _sfxSourceList.Clear();
             foreach (var audioSource in SfxSourceParentObject.GetComponents<AudioSource>()) {
                 Destroy(audioSource);
             }
             
-            foreach (var element in SfxPackageSo.SoundList) {
+            foreach (var element in SfxPackageSo.SoundList)
+            {
+                if (_sfxSourceList.Keys.Contains(element.Name))
+                {
+                    Debug.Log("sfx element twice");
+                }
+                    
+                
                 var audioSource = SfxSourceParentObject.AddComponent<AudioSource>();
                 audioSource.outputAudioMixerGroup = AudioSfxGroup;
                 

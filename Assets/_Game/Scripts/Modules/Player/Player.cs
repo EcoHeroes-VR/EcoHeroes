@@ -1,7 +1,8 @@
 ﻿using _Game.Scripts.Modules.DialogManager;
+using UnityEngine.XR.Interaction.Toolkit;
 using _Game.Scripts.Helper;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+using System;
 
 namespace _Game.Scripts.Modules.Player
 {
@@ -34,7 +35,7 @@ namespace _Game.Scripts.Modules.Player
         
         protected void Start()
         {
-            SetSubtitles(PlayerPrefs.GetInt("subtitlesSetting", 1) == 1);
+            SetSubtitles(Convert.ToBoolean(PlayerPrefs.GetInt("subtitlesSetting", 1)));
 
             var masterVolume = PlayerPrefs.GetFloat("mainSoundLevel", 0.0f);
             SoundManager.SoundManager.GetInstance.MasterVolume = masterVolume;

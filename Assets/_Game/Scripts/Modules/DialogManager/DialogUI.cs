@@ -11,6 +11,7 @@ namespace _Game.Scripts.Modules.DialogManager
     public class DialogUI : MonoBehaviour
     {
         private Canvas _canvas;
+        private Player.Player _player;
         private DialogManager _dialogManager;
 
         [SerializeField] private Button nextButton;
@@ -22,8 +23,12 @@ namespace _Game.Scripts.Modules.DialogManager
         private void Awake()
         {
             _canvas = GetComponent<Canvas>();
-            
             nextButton.onClick.AddListener(NextDialog);
+        }
+
+        private void Start()
+        {
+            _player = Player.Player.GetInstance;
         }
 
         /// <summary>
@@ -37,7 +42,6 @@ namespace _Game.Scripts.Modules.DialogManager
             _dialogManager = manager;
             speaker.text = dialog.Speaker;
             message.text = dialog.DialogText;
-            Debug.Log("setDialog");
             activated = true;
         }
 
@@ -49,12 +53,12 @@ namespace _Game.Scripts.Modules.DialogManager
         /// </summary>
         public void ToggleUI(bool value)
         {
-            _canvas.enabled = value;
+            if (_player.Subtitles)
+                _canvas.enabled = value;
+            
             nextButton.gameObject.SetActive(value);
 
-            Debug.Log("toggleUI");
             if (!value) {
-                Debug.Log("toggleUI - false");
                 _dialogManager.OnCurrentDialogEnd.Invoke(_dialogManager.GetCurrentDialogName, _dialogManager.gameObject);
             }
         }
@@ -64,7 +68,6 @@ namespace _Game.Scripts.Modules.DialogManager
             if (!activated) return;
             activated = false;
             
-            Debug.Log("DialogUI - NextDialog");
             _dialogManager.NextDialog();
         }
         

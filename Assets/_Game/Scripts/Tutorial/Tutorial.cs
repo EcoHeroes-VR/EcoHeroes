@@ -89,18 +89,17 @@ namespace _Game.Scripts.Tutorial
         /// </summary>
         void Update()
         {
-            if (!CheckIfCupExists() && !_cupDialog)
-            {
+            if (!CheckIfCupExists() && !_cupDialog) {
+                if (_dialogManager.DialogPackage != tutorialPackage)
+                    return;
+
                 _cupDialog = true;
                 if (teleportationProvider != null)
-                {
                     teleportationProvider.enabled = true;
-                }
                 _dialogManager.NextDialog("end1");
             }
                 
             //Miss Change DialogManager if dialog grip is finished back
-
         }
         
         /// <summary>

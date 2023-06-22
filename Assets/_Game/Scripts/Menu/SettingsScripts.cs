@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -48,6 +49,7 @@ namespace _Game.Scripts.Modules.Menu.SettingsScript
         void OnSliderDifficultyValueChanged(float value)
         {
             PlayerPrefs.SetInt("difficultyLevel", Mathf.RoundToInt(sliderDifficulty.value));
+            PlayerPrefs.Save();
         }
 
         /// <summary>
@@ -59,6 +61,8 @@ namespace _Game.Scripts.Modules.Menu.SettingsScript
         void OnSliderSubtitlesValueChanged(float value)
         {
             PlayerPrefs.SetInt("subtitlesSetting", Mathf.RoundToInt(sliderSubtitles.value));
+            Player.Player.GetInstance.SetSubtitles(Convert.ToBoolean(value));
+            PlayerPrefs.Save();
         }
 
         /// <summary>
@@ -74,6 +78,7 @@ namespace _Game.Scripts.Modules.Menu.SettingsScript
             
             // Update the saved preference
             PlayerPrefs.SetFloat("mainSoundLevel", sliderValue);
+            PlayerPrefs.Save();
         }
 
         /// <summary>
@@ -88,29 +93,7 @@ namespace _Game.Scripts.Modules.Menu.SettingsScript
             var sliderValue = (float)sliderSoundEffects.value;
 
             PlayerPrefs.SetFloat("effectsSoundLevel", sliderValue);
-        }
-
-        /// <summary>
-        /// Description:    Go back to the main menu\n
-        /// Author:         Nikita Guryanov, Dominik Wegner\n
-        /// Args:           None\n
-        /// Ret:            None
-        /// </summary>
-        void BackMenu()
-        {
-            // Save the player's preferences
             PlayerPrefs.Save();
-        }
-
-        /// <summary>
-        /// Description:    Update is called once per frame\n
-        /// Author:         Nikita Guryanov, Dominik Wegner\n
-        /// Args:           None\n
-        /// Ret:            None
-        /// </summary>
-        void Update()
-        {
-
         }
     }
 }
