@@ -46,28 +46,35 @@ Vielen Dank an alle Beteiligten! Darunter das Projekt ii.oo, das Büro für Nach
 # Technisches
 
 ## Anforderungen
-* Unity 2021.3.21f1
+* Unity Version: 2021.3.21f1
 * VR Headset (z.B. Occulus Rift/HTC Vive Pro)
-* Die empfohlene Systemanforderungen der Workstation sind mit derer des genutzten VR-Headsets abzugleichen
+* Zur Ausführung der .exe Anwendung ist keine zusätzliche Installation eines .NET Frameworks notwendig
+* Zur Weiterentwicklung der Software in Unity werden ensprechende .NET Frameworks mit Unity automatisch installiert
+* Empfohlener freier Speicherplatz: mind. 10GB
+* Getestete VR-Headsets: HTC Vive Pro 2, Oculus Quest, Oculus Rift S
+* Getestete Workstation: Intel® Core™ i7 (11. Generation), NVIDIA GeForce RTX 3070, 16 GB DDR4 3200 MHz RAM
+* Die empfohlene Systemanforderungen der Workstation sind jedoch immer mit derer des genutzten VR-Headsets abzugleichen!
 * Für Weiterentwicklung: Unity C# Code Editor (Bsp.: Jetbrains Rider oder Microsoft Visual Studio)
+
+## Hinweise .NET Framework
+Unity nutzt die Open-Source-Plattform .NET, um sicherzustellen, dass mit Unity erstellte Anwendungen auf einer Vielzahl unterschiedlicher Hardwarekonfigurationen ausgeführt werden können. Eine eigenständige Installation dieser Frameworks zur Ausführung oder Entwicklung ist nicht notwendig. Für Eco Heroes VR wurde Unity's Mono .NET Runtime Fork mit der C# Sprache genutzt. Nähere Informationen zu diesem Thema lassen sich in der [Unity Documentation](https://docs.unity3d.com/Manual/overview-of-dot-net-in-unity.html) nachlesen.
 
 ## Installation
 
-[Schritt-für-Schritt Anleitung](Eco_Heroes_Installationsanleitung.pdf)
+[Schritt-für-Schritt Anleitung](EcoHereos_Builds.zip)
 
 Um das Spiel zu spielen:
 
 ```
-1. Projektdaten herunterladen
-2. Projektdaten in Unity öffenen (Editor Version s.o.)
-3. Spielversion bauen
-4. gebaute Version ausführen
-5. falls noch nicht getan: entsprechende Software des VR-Headsets installieren
+1. Repository klonen (siehe Schritt für Schritt Anleitung oben)
+2. EcoHereos_Builds.zip entpacken
+3. falls noch nicht getan: entsprechende Software des VR-Headsets installieren
+4. EcoHeroesVR.exe ausführen
 ```
 
 Zur Weiterentwicklung:
 ```
-1. Projektdaten herunterladen
+1. Repository klonen (siehe Schritt für Schritt Anleitung oben)
 2. Projektdaten in Unity öffenen (Editor Version s.o.)
 3. Weiterentwicklung:
     - Bearbeiten der Scenes & Assets in Unity
