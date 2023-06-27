@@ -66,7 +66,7 @@ Unity nutzt die Open-Source-Plattform .NET, um sicherzustellen, dass mit Unity e
 Um das Spiel zu spielen:
 
 ```
-1. Repository klonen (siehe Schritt für Schritt Anleitung oben)
+1. EcoHeroes_Build.zip herunterladen
 2. EcoHereos_Builds.zip entpacken
 3. falls noch nicht getan: entsprechende Software des VR-Headsets installieren
 4. EcoHeroesVR.exe ausführen
@@ -81,6 +81,12 @@ Zur Weiterentwicklung:
     - Bearbeiten der C# Scripts in einem ausgwählten Code Editor
 4. falls noch nicht getan: entsprechende Software des Entwicklungs-VR-Headsets installieren
 ```
+
+>__Wichtig__:   
+> Dieses Repository nutzt Git-LFS.<br>
+> Um an diesem Projekt weiter entwickeln zu können, muss Git-LFS installiert werden.<br>
+> Hier ein Linke, der auf eine Anleitung verweist:<br>
+> https://docs.github.com/de/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
 
 ## Überblick der wichtigsten Dateien für Entwickler
 
