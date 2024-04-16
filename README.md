@@ -1,12 +1,14 @@
 <h1 align="center">
-    <img src="images/eco-heroes-showcase-1.png" alt="Logo" height="350">
+    <img src="https://www.hs-augsburg.de/homes/aascha/blog/wp-content/uploads/2023/06/eco-heroes-showcase-1.png" alt="Logo" height="350">
     </br></br>
     <b>Eco Heroes VR</b>
     </br>
     Augsburgs Zukunft in deinen Händen!
-
-    https://www.hs-augsburg.de/homes/aascha/blog/2023/06/14/projekt-eco-heroes-vr/
 </h1>
+<h2>
+    <p style="color:red;">Download der Software aufgrund der Dateigrößen derzeit nur über folgende Webseite möglich:</p>
+    <a href="https://www.hs-augsburg.de/homes/aascha/blog/2023/06/14/projekt-eco-heroes-vr/"><b>EcoHeroes-V1 Homepage</b> </a>
+</h2>
 
 # Inhalt
 
